@@ -2,4 +2,88 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.01rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.background-grey {
+  background-color: hsl(217, 19%, 35%) !important;
+}
+
+.background-dark {
+  background-color: hsl(219, 29%, 14%) !important;
+}
+
+.background-white {
+  background-color: white !important;
+}
+
+.text-color-dark {
+  color: hsl(219, 29%, 14%) !important;
+}
+
+h4, h5 {
+  color: hsl(0, 0%, 100%);
+}
+
+h5, h6 {
+  font-size: 13px;
+}
+
+h5 {
+  opacity: 50%;
+}
+
+h3, h6 {
+  color: hsl(0, 0%, 100%);
+}
+
+h3 {
+  margin: 1rem 0 0.8rem;
+}
+
+h6 {
+  opacity: 70%;
+}
+
+.testimonial-content {
+  background-color: hsl(263, 55%, 52%);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.profile img {
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid hsl(224, 10%, 45%);
+}
+
+.testimonial-container {
+  background-color: hsl(214, 17%, 92%);
+  display: grid;
+  gap: 1.25rem;
+  width: min(90%, 70rem);
+  margin: 4rem 0;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    background: red;
+  }
 }/*# sourceMappingURL=style.css.map */

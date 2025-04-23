@@ -1,0 +1,14 @@
+$backgroundColor: hsl(214, 17%, 92%);
+$h4color: hsl(0, 0%, 100%);
+$h5color: hsl(0, 0%, 100%);
+$h3color: hsl(0, 0%, 100%);
+$textColorDark: hsl(219, 29%, 14%);
+$testimonialContentColor: hsl(263, 55%, 52%);
+$backgroundColorGrey: hsl(217, 19%, 35%);
+$backgroundColorDark: hsl(219, 29%, 14%);
+
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  
+}
