@@ -5,15 +5,16 @@
 }
 
 body {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
   width: 100vw;
+  overflow-x: hidden;
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 200;
   letter-spacing: 0.01rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  align-items: start;
+  background-color: hsl(214, 17%, 92%);
 }
 
 .profile {
@@ -75,15 +76,105 @@ h6 {
 }
 
 .testimonial-container {
-  background-color: hsl(214, 17%, 92%);
-  display: grid;
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: min(90%, 70rem);
   margin: 4rem 0;
+  gap: 1.25rem;
+}
+
+.left-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1.25rem;
+}
+.left-grid .upper-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 50%;
+}
+.left-grid .upper-grid .testimonial-content:nth-child(1) {
+  width: 100%;
+}
+.left-grid .lower-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 50%;
+}
+.left-grid .lower-grid .testimonial-content:nth-child(2) {
+  width: 100%;
+}
+
+.right-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 @media screen and (min-width: 850px) {
   body {
-    background: red;
+    align-items: center;
+    height: 100vh;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 1.25rem;
+  }
+  .left-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 1.25rem;
+  }
+  .left-grid .upper-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    height: 50%;
+  }
+  .left-grid .upper-grid .testimonial-content:nth-child(1) {
+    width: 180%;
+  }
+  .left-grid .lower-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    height: 50%;
+  }
+  .left-grid .lower-grid .testimonial-content:nth-child(2) {
+    width: 180%;
+  }
+  .right-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 18.5%;
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
